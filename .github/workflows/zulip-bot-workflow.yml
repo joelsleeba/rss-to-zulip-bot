@@ -25,7 +25,7 @@ jobs:
           python-version: '3.x'
 
       - name: Install dependencies
-        run: pip install requests zulip feedparser markdowinify
+        run: pip install requests zulip feedparser markdownify
 
       - name: Run script
         run: python main.py
