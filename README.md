@@ -1,4 +1,4 @@
-# ArXiv-to-Zulip bot
+# RSS-to-Zulip bot
 
 ## How to Setup
 1. Create a generic bot in your Zulip Organization
