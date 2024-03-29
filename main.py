@@ -16,6 +16,7 @@ RSS_FEEDS = {
     "Dan Ma's Topology Blog" : "https://dantopology.wordpress.com/feed/",
     "The Higher Geometer" : "https://thehighergeometer.wordpress.com/feed/",
     "Terence Tao" : "https://terrytao.wordpress.com/feed/",
+    "Mathematics, Quanta Magazine" : "https://api.quantamagazine.org/mathematics/feed",
     "Physics, Quanta Magazine" : "https://api.quantamagazine.org/physics/feed",
     "Biology, Quanta Magazine" : "https://api.quantamagazine.org/biology/feed",
     "Computer Science, Quanta Magazine" : "https://api.quantamagazine.org/computer-science/feed"
