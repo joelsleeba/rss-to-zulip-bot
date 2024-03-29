@@ -80,8 +80,7 @@ def update_zulip_stream():
             summary = markdownify.markdownify(article.description)
             tags = ", ".join([entry['term'] for entry in article.tags])
             message = f"\n**[{title}]({link})**\n*{author}, {published}*\n\n{summary}\n\n*{tags}*"
-            # send_zulip_message(message, topic)
-            print(message)
+            send_zulip_message(message, topic)
 
 # Main function to check for new articles periodically
 if __name__ == "__main__":
