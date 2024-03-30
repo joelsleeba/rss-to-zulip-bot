@@ -16,10 +16,19 @@ RSS_FEEDS = {
     "Dan Ma's Topology Blog" : "https://dantopology.wordpress.com/feed/",
     "The Higher Geometer" : "https://thehighergeometer.wordpress.com/feed/",
     "Terence Tao" : "https://terrytao.wordpress.com/feed/",
+    "Peter Woit" : "https://www.math.columbia.edu/~woit/wordpress/atom.xml",
+    "Math3ma" : "http://www.math3ma.com/blog/rss.xml",
+    "Math ∩ Programming" : "https://www.jeremykun.com/index.xml"
+    "DESVL" : "https://desvl.xyz/atom.xml",
+    "George Lowther" : "https://almostsuremath.com/feed",
+    "n-Category Cafe" : "https://golem.ph.utexas.edu/category/atom10.xml",
     "Mathematics, Quanta Magazine" : "https://api.quantamagazine.org/mathematics/feed",
     "Physics, Quanta Magazine" : "https://api.quantamagazine.org/physics/feed",
     "Biology, Quanta Magazine" : "https://api.quantamagazine.org/biology/feed",
-    "Computer Science, Quanta Magazine" : "https://api.quantamagazine.org/computer-science/feed"
+    "Computer Science, Quanta Magazine" : "https://api.quantamagazine.org/computer-science/feed",
+    "Steven Wolfram, Writings" : "https://writings.stephenwolfram.com/feed",
+    "Bit Player" : "http://bit-player.org/feed",
+    "Azimuth" : "https://johncarlosbaez.wordpress.com/feed",
 }
 
 # Function to send a message to Zulip
