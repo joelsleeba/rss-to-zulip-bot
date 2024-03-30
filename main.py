@@ -18,7 +18,7 @@ RSS_FEEDS = {
     "Terence Tao" : "https://terrytao.wordpress.com/feed/",
     "Peter Woit" : "https://www.math.columbia.edu/~woit/wordpress/atom.xml",
     "Math3ma" : "http://www.math3ma.com/blog/rss.xml",
-    "Math ∩ Programming" : "https://www.jeremykun.com/index.xml"
+    "Math ∩ Programming" : "https://www.jeremykun.com/index.xml",
     "DESVL" : "https://desvl.xyz/atom.xml",
     "George Lowther" : "https://almostsuremath.com/feed",
     "n-Category Cafe" : "https://golem.ph.utexas.edu/category/atom10.xml",
