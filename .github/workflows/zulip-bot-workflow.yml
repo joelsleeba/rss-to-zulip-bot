@@ -1,4 +1,4 @@
-name: ArXiv to Zulip Bot
+name: GitHub actions Zulip Bot
 
 on:
   push:

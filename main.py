@@ -79,6 +79,7 @@ def update_zulip_stream():
         last_updated_article_link = last_article_update_link(topic)
         flag = True if last_updated_article_link else False # To avoid the case when not having an article ends up not getting to the execution part of the for loop
         for article in feed.entries[:4][::-1]: #This is to get the latest 5 articles in ascending order by time
+            print(feed_name)
             link = article.link
             if flag:
                 if link == last_updated_article_link:
@@ -86,9 +87,9 @@ def update_zulip_stream():
                 continue
             title = markdownify.markdownify(article.title.replace('$^{\\ast}$', '* ').replace('$^*$', '* ').replace('$^*$', '* ').replace("$", "$$").replace("\n", " "))
             published = time.strftime("%d %B %Y", article.published_parsed)
-            author = article.author
+            author = article.author if 'author' in article.keys() else "" # Some rss feeds lack these fields
             summary = markdownify.markdownify(article.description)
-            tags = ", ".join([entry['term'] for entry in article.tags])
+            tags = ", ".join([entry['term'] for entry in article.tags]) if 'tags' in article else "" # Some feeds lack tags
             message = f"\n**[{title}]({link})**\n*{author}, {published}*\n\n{summary}\n\n*{tags}*"
             send_zulip_message(message, topic)
 
