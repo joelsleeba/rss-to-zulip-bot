@@ -14,6 +14,8 @@ ZULIP_STREAM_NAME = 'articles'
 # Define the dictionary of feed names and their RSS links
 RSS_FEEDS = {
     "Dan Ma's Topology Blog": "https://dantopology.wordpress.com/feed/",
+    "Orr Shalit": "https://noncommutativeanalysis.wordpress.com/feed/",
+    "Roland Spiecher": "https://rolandspeicher.com/feed/",
     "The Higher Geometer": "https://thehighergeometer.wordpress.com/feed/",
     "Terence Tao": "https://terrytao.wordpress.com/feed/",
     "Peter Woit": "https://www.math.columbia.edu/~woit/wordpress/atom.xml",
