@@ -1,11 +1,9 @@
 import os
-import requests
 import time
 import zulip
 import re
 import feedparser
 import markdownify
-from datetime import datetime, timedelta, timezone
 
 # Define your Zulip credentials
 ZULIP_EMAIL = os.environ.get('ZULIP_EMAIL')
@@ -69,7 +67,7 @@ def last_article_update_link(topic):
         if messages:
             latest_message = messages[0]
             latest_message_content = latest_message["content"]
-            url_pattern = r'(http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\\(\\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+)'
+            url_pattern = r'\[.*?\]\((.*?)\)'
             latest_arxiv_link = re.findall(
                 url_pattern, latest_message_content)[0]
             return latest_arxiv_link
