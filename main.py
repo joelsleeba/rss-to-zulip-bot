@@ -30,6 +30,7 @@ RSS_FEEDS = {
     "Steven Wolfram, Writings": "https://writings.stephenwolfram.com/feed",
     "Bit Player": "http://bit-player.org/feed",
     "Azimuth": "https://johncarlosbaez.wordpress.com/feed",
+    "Arch Linux": "https://archlinux.org/feeds/news/",
 }
 
 # Function to send a message to Zulip
