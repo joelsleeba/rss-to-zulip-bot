@@ -90,8 +90,8 @@ def update_zulip_stream():
         last_updated_article_link = last_article_update_link(topic)
         # To avoid the case when not having an article ends up not getting to the execution part of the for loop
         flag = True if last_updated_article_link else False
-        # This is to get the latest 15 articles in ascending order by time
-        for article in feed.entries[:15][::-1]:
+        # This is to get the latest 5 articles in ascending order by time
+        for article in feed.entries[:5][::-1]:
             print(feed_name)
             link = article.link
             if flag:
