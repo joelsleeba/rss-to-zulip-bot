@@ -11,6 +11,7 @@ ZULIP_STREAM_NAME = 'articles'
 
 # Define the dictionary of feed names and their RSS links
 RSS_FEEDS = {
+    "arXiv OA and FA": "https://rss.arxiv.org/atom/math.OA+math.FA"
     "Dan Ma's Topology Blog": "https://dantopology.wordpress.com/feed/",
     "Orr Shalit": "https://noncommutativeanalysis.wordpress.com/feed/",
     "Free Probability Theory": "https://rolandspeicher.com/feed/",
@@ -88,8 +89,8 @@ def update_zulip_stream():
         last_updated_article_link = last_article_update_link(topic)
         # To avoid the case when not having an article ends up not getting to the execution part of the for loop
         flag = True if last_updated_article_link else False
-        # This is to get the latest 5 articles in ascending order by time
-        for article in feed.entries[:4][::-1]:
+        # This is to get the latest 15 articles in ascending order by time
+        for article in feed.entries[:15][::-1]:
             print(feed_name)
             link = article.link
             if flag:
