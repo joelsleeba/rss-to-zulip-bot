@@ -11,7 +11,7 @@ ZULIP_STREAM_NAME = 'articles'
 
 # Define the dictionary of feed names and their RSS links
 RSS_FEEDS = {
-    "arXiv OA and FA": "https://rss.arxiv.org/atom/math.OA+math.FA",
+    # "arXiv OA and FA": "https://rss.arxiv.org/atom/math.OA+math.FA", doesn't have published_parsed data
     "Dan Ma's Topology Blog": "https://dantopology.wordpress.com/feed/",
     "Orr Shalit": "https://noncommutativeanalysis.wordpress.com/feed/",
     "Free Probability Theory": "https://rolandspeicher.com/feed/",
