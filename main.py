@@ -30,6 +30,7 @@ RSS_FEEDS = {
     "Computer Science, Quanta Magazine": "https://api.quantamagazine.org/computer-science/feed",
     "Steven Wolfram, Writings": "https://writings.stephenwolfram.com/feed",
     "Bit Player": "http://bit-player.org/feed",
+    "Geoff Boeing": "https://geoffboeing.com/",
     "Azimuth": "https://johncarlosbaez.wordpress.com/feed",
     "Arch Linux": "https://archlinux.org/feeds/news/",
 }
