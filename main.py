@@ -11,7 +11,7 @@ ZULIP_STREAM_NAME = 'articles'
 
 # Define the dictionary of feed names and their RSS links
 RSS_FEEDS = {
-    "arXiv OA and FA": "https://rss.arxiv.org/atom/math.OA+math.FA"
+    "arXiv OA and FA": "https://rss.arxiv.org/atom/math.OA+math.FA",
     "Dan Ma's Topology Blog": "https://dantopology.wordpress.com/feed/",
     "Orr Shalit": "https://noncommutativeanalysis.wordpress.com/feed/",
     "Free Probability Theory": "https://rolandspeicher.com/feed/",
@@ -106,6 +106,7 @@ def update_zulip_stream():
             tags = ", ".join([entry['term'] for entry in article.tags]
                              ) if 'tags' in article else ""  # Some feeds lack tags
             message = f"\n**[{title}]({link})**\n*{author}{published}*\n\n{summary}\n\n*{tags}*"
+            print(message)
             send_zulip_message(message, topic)
 
 
